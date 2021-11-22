@@ -78,7 +78,13 @@ a:hover {
   margin-right: 4px;
   overflow: hidden;
 }
-
+.avatardetails{
+  width: 32px;
+  height: 32px;
+  margin-right: 150px;
+  margin-left: auto;
+  display: block;
+}
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1201,7 +1207,7 @@ section {
   position: relative;
 }
 .card-blog .card-category-box {
-  position: absolute;
+  position: absolute;margin-left: 50%;
   text-align: center;
   top: -16px;
   left: 15px;
