@@ -1207,7 +1207,8 @@ section {
   position: relative;
 }
 .card-blog .card-category-box {
-  position: absolute;margin-left: 50%;
+  position: absolute;
+  margin-left: 50%;
   text-align: center;
   top: -16px;
   left: 15px;
