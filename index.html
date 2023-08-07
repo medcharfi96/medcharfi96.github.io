@@ -56,7 +56,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/MC.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/1675615142465.jpeg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -98,29 +98,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>Python</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JavaScript</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Java</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>SQL</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+
                 </div>
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
@@ -138,7 +116,8 @@
 
                     </p>
                     <p class="lead">
-                      I have a bachelor degree in computer science from Private higher school of engineering and technology(ESPRIT).
+                      I have a bachelor degree in computer science from Private higher school of engineering and
+                      technology(ESPRIT).
                     </p>
                     <p class="lead">
                       My motivation comes from seeing my progress in tangible ways which is one reason I enjoy
@@ -155,6 +134,157 @@
         </div>
       </div>
     </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.progress-value > span').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3500,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+      });
+    </script>
+
+    <section class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <div class="line-mf"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+
+            <div class="progress blue">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="inner-circle"></div>
+              <div class="progress-value"><span>80</span>%</div>
+            
+              
+            </div>
+            <span style="background-position-x: center;
+            font-size: larger;
+            text-align: center;">Python</span>
+            
+            
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="progress yellow">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="inner-circle"></div>
+              <div class="progress-value"><span>60</span>%</div>
+            </div>
+            <span style="background-position-x: center;
+            font-size: larger;
+            text-align: center;">Java</span>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="progress pink">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="inner-circle"></div>
+              <div class="progress-value"><span>70</span>%</div>
+            </div>
+            <span style="background-position-x: center;
+            font-size: larger;
+            text-align: center;">JavaScript</span>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="progress green">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="inner-circle"></div>
+              <div class="progress-value"><span>90</span>%</div>
+            </div>
+            <span style="background-position-x: center;
+            font-size: larger;
+            text-align: center;">SGBD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END  SKILLS SECTION -->
+
+    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"></span>
+              </div>
+              <div class="counter-num">
+                <p  class="counter purecounter"></p>
+                <span class="counter-text">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter purecounter"></p>
+                <span class="counter-text">Java</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"></span>
+              </div>
+              <div class="counter-num counter purecounter">
+                <p class="counter purecounter"></p>
+                <span class="counter-text">SGDB</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter purecounter"></p>
+                <span class="counter-text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <section id="resume" class="resume">
       <div class="container">
@@ -197,33 +327,49 @@
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Software Engineer</h4>
-              <h5>feb 2022 - Now</h5>
-              <p><em>Voguel consulting(Clevermint), Tunis, Tunisia </em></p>
-              <p ><strong ><a href="https://www.agoria.be/fr" >Agoria Connect Project</a></strong></p>
+              <h5>Jun 2023 - Now</h5>
+              <p><em>Wimbee tech, Tunis, Tunisia </em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>feb 2022 - Apr 2023</h5>
+              <p><em>Voguel consulting, Tunis, Tunisia </em></p>
+              <p><strong><a href="https://www.agoria.be/fr">Agoria Connect Project</a></strong></p>
               <ul>
                 <li>Building ERP website service including a survey test and
                   auto-calculate results using Django.</li>
                 <li>Making a robust security system for authentification and registering</li>
                 <li>Developing Administrator dashboard forms and adding
                   statistics.</li>
-                  <li>Exporting  files in several formats using python libraries.</li>
+                <li>Exporting files in several formats using python libraries.</li>
                 <li>Implementing auto-traduction patterns and machine
                   learning models for consumer classification.</li>
               </ul>
-              <p ><strong ><a href="https://timesheet.voguelconsulting.com/" >Timesheet project</a></strong></p>
+              <p><strong><a href="https://timesheet.voguelconsulting.com/">Kairos Manager</a></strong></p>
               <ul>
                 <li>Constructing Back-end functions for an ERP and administration system settings using NodeJS.</li>
                 <li>Developing Front part of The website and integrating
                   Backend Services.</li>
                 <li>Developing Administrator settings dashboard forms.</li>
-                  
+
+              </ul>
+              <p><strong><a href="https://www.plaisirdujardin.com">Plaisir du jardin project</a></strong></p>
+              <ul>
+                
+
+
+                <li>Optimize and improve existing code and site response times.</li>
+                <li>Correct back-office structure using nodeJs and angular.</li>
+                <li>Ensure site referencing (SEO) using Angular SSR.</li>
+                <li>Development of the role and permission management part.</li>
+
               </ul>
             </div>
             <div class="resume-item">
               <h4>Software Engineer</h4>
               <h5>Aug 2020 - sep 2021</h5>
               <p><em>TEweb, Tunis, Tunisia </em></p>
-              <p ><strong ><a href="https://lokafy.com/" >Lokafy project</a></strong></p>
+              <p><strong><a href="https://lokafy.com/">Lokafy project</a></strong></p>
               <ul>
                 <li>Colaborate effectively with 2 back-end team members for Revising, modularizing and updating old code
                   bases to modern development standards</li>
@@ -373,59 +519,7 @@
       </div>
     </section> End Services Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <!--
-	<div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> End Counter Section -->
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -564,7 +658,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
@@ -587,7 +681,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -755,8 +849,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a
-                  href="https://mohamedcharfi.medium.com/facial-emotion-recognition-1f6893be07ee"><img
+                <a href="https://mohamedcharfi.medium.com/facial-emotion-recognition-1f6893be07ee"><img
                     src="assets/img/facezabour.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
